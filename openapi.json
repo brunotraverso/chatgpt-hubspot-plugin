@@ -17,10 +17,20 @@
         "operationId": "list_contacts",
         "summary": "Retrieve a list of contacts",
         "parameters": [
-          { "name": "limit", "in": "query", "schema": { "type": "integer", "default": 10 } },
-          { "name": "offset", "in": "query", "schema": { "type": "integer", "default": 0 } }
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": { "type": "integer", "default": 10 }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": { "type": "integer", "default": 0 }
+          }
         ],
-        "responses": { "200": { "description": "A list of contacts" } }
+        "responses": {
+          "200": { "description": "A list of contacts" }
+        }
       },
       "post": {
         "operationId": "create_contact",
@@ -42,7 +52,9 @@
             }
           }
         },
-        "responses": { "200": { "description": "Contact created" } }
+        "responses": {
+          "200": { "description": "Contact created" }
+        }
       }
     },
     "/contacts/{contactId}": {
@@ -52,7 +64,9 @@
       "get": {
         "operationId": "get_contact",
         "summary": "Retrieve a single contact",
-        "responses": { "200": { "description": "A single contact" } }
+        "responses": {
+          "200": { "description": "A single contact" }
+        }
       },
       "patch": {
         "operationId": "update_contact",
@@ -73,15 +87,18 @@
             }
           }
         },
-        "responses": { "200": { "description": "Contact updated" } }
+        "responses": {
+          "200": { "description": "Contact updated" }
+        }
       },
       "delete": {
         "operationId": "delete_contact",
         "summary": "Delete a contact",
-        "responses": { "204": { "description": "Contact deleted" } }
+        "responses": {
+          "204": { "description": "Contact deleted" }
+        }
       }
     },
-
     "/companies": {
       "get": {
         "operationId": "list_companies",
@@ -90,7 +107,9 @@
           { "name": "limit", "in": "query", "schema": { "type": "integer", "default": 10 } },
           { "name": "offset", "in": "query", "schema": { "type": "integer", "default": 0 } }
         ],
-        "responses": { "200": { "description": "A list of companies" } }
+        "responses": {
+          "200": { "description": "A list of companies" }
+        }
       },
       "post": {
         "operationId": "create_company",
@@ -110,7 +129,9 @@
             }
           }
         },
-        "responses": { "200": { "description": "Company created" } }
+        "responses": {
+          "200": { "description": "Company created" }
+        }
       }
     },
     "/companies/{companyId}": {
@@ -120,7 +141,9 @@
       "get": {
         "operationId": "get_company",
         "summary": "Retrieve a single company",
-        "responses": { "200": { "description": "A single company" } }
+        "responses": {
+          "200": { "description": "A single company" }
+        }
       },
       "patch": {
         "operationId": "update_company",
@@ -139,15 +162,18 @@
             }
           }
         },
-        "responses": { "200": { "description": "Company updated" } }
+        "responses": {
+          "200": { "description": "Company updated" }
+        }
       },
       "delete": {
         "operationId": "delete_company",
         "summary": "Delete a company",
-        "responses": { "204": { "description": "Company deleted" } }
+        "responses": {
+          "204": { "description": "Company deleted" }
+        }
       }
     },
-
     "/deals": {
       "get": {
         "operationId": "list_deals",
@@ -156,7 +182,9 @@
           { "name": "limit", "in": "query", "schema": { "type": "integer", "default": 10 } },
           { "name": "offset", "in": "query", "schema": { "type": "integer", "default": 0 } }
         ],
-        "responses": { "200": { "description": "A list of deals" } }
+        "responses": {
+          "200": { "description": "A list of deals" }
+        }
       },
       "post": {
         "operationId": "create_deal",
@@ -178,7 +206,9 @@
             }
           }
         },
-        "responses": { "200": { "description": "Deal created" } }
+        "responses": {
+          "200": { "description": "Deal created" }
+        }
       }
     },
     "/deals/{dealId}": {
@@ -188,7 +218,9 @@
       "get": {
         "operationId": "get_deal",
         "summary": "Retrieve a single deal",
-        "responses": { "200": { "description": "A single deal" } }
+        "responses": {
+          "200": { "description": "A single deal" }
+        }
       },
       "patch": {
         "operationId": "update_deal",
@@ -209,24 +241,29 @@
             }
           }
         },
-        "responses": { "200": { "description": "Deal updated" } }
+        "responses": {
+          "200": { "description": "Deal updated" }
+        }
       },
       "delete": {
         "operationId": "delete_deal",
         "summary": "Delete a deal",
-        "responses": { "204": { "description": "Deal deleted" } }
+        "responses": {
+          "204": { "description": "Deal deleted" }
+        }
       }
     },
-
     "/tasks": {
       "get": {
         "operationId": "list_tasks",
         "summary": "Retrieve a list of tasks",
         "parameters": [
-          { "name": "limit", "in": "query`, "schema": { "type": "integer", "default": 10 } },
-          { "name": "offset`, "in": "query`, "schema": { "type": "integer", "default": 0 } }
+          { "name": "limit", "in": "query", "schema": { "type": "integer", "default": 10 } },
+          { "name": "offset", "in": "query", "schema": { "type": "integer", "default": 0 } }
         ],
-        "responses": { "200": { "description": "A list of tasks" } }
+        "responses": {
+          "200": { "description": "A list of tasks" }
+        }
       },
       "post": {
         "operationId": "create_task",
@@ -247,17 +284,21 @@
             }
           }
         },
-        "responses": { "200": { "description": "Task created" } }
+        "responses": {
+          "200": { "description": "Task created" }
+        }
       }
     },
     "/tasks/{taskId}": {
       "parameters": [
-        { "name": "taskId", "in": "path`, "required": true, "schema": { "type": "string" } }
+        { "name": "taskId", "in": "path", "required": true, "schema": { "type": "string" } }
       ],
       "get": {
         "operationId": "get_task",
         "summary": "Retrieve a single task",
-        "responses": { "200": { "description": "A single task" } }
+        "responses": {
+          "200": { "description": "A single task" }
+        }
       },
       "patch": {
         "operationId": "update_task",
@@ -277,12 +318,16 @@
             }
           }
         },
-        "responses": { "200": { "description": "Task updated" } }
+        "responses": {
+          "200": { "description": "Task updated" }
+        }
       },
       "delete": {
         "operationId": "delete_task",
         "summary": "Delete a task",
-        "responses": { "204": { "description": "Task deleted" } }
+        "responses": {
+          "204": { "description": "Task deleted" }
+        }
       }
     }
   }

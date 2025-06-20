@@ -1,0 +1,23 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "HubSpot Connector",
+  "name_for_model": "hubspot_connector",
+  "description_for_human": "A plugin to view, manage and organise Contacts, Companies, Deals and Tasks in HubSpot",
+  "description_for_model": "A plugin that invokes functions to create contacts, retrieve companies, manage deals and tasks in HubSpot.",
+  "auth": {
+    "type": "service_http",
+    "authorization_type": "bearer_header",
+    "verification_tokens": {
+      "openai": "sk_43d7b275bf29aac791e84df60d74de74cf7d3f8ace200c5d"
+    }
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://brunotraverso.github.io/chatgpt-hubspot-plugin/openapi.json",
+    "is_user_authenticated": true
+  },
+  "logo_url": "https://brunotraverso.github.io/chatgpt-hubspot-plugin/logo.png",
+  "contact_email": "bruno@cogo.ie",
+  "legal_info_url": "https://cogo.ie"
+}
+
